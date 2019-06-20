@@ -3171,7 +3171,7 @@ class Channel {
 		$str = '';
 		$strict_empty = (ee()->TMPL->fetch_param('restrict_channel') == 'no') ? 'no' : 'yes';
 
-		if (ee()->TMPL->fetch_param('style') == '' OR ee()->TMPL->fetch_param('style') == 'nested')
+		if (ee()->TMPL->fetch_param('style') == 'nested')
 		{
 			$this->category_tree(array(
 				'group_id'		=> $group_ids,
